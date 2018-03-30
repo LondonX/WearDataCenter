@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303F9F"
+    tools:context="com.londonx.weardatacenter.MainActivity"
+    tools:deviceIds="wear">
+
+    <TextView
+        android:id="@+id/tvCrown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/tvClicker"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/clicker"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Clicker"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/pbConnecting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvAppNotInstalled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Server App not installed"
+        android:visibility="invisible" />
+
+</FrameLayout>
+
